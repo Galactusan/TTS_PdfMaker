@@ -36,6 +36,16 @@ You can run the projects without Visual Studio using the .NET CLI:
     ```bash
     dotnet run --project TTS_PdfMaker.AppHost/TTS_PdfMaker.AppHost.csproj
     ```
+OR
+
+In Visual Studio:
+
+1. Open the TTS_PdfMaker.sln
+   
+3. Set the starting project to TTS_PdfMaker.AppHost
+   
+5. Run with F5 or from GUI
+
 ## Notes
 
 - All projects use NuGet package references. No external DLLs are required.
