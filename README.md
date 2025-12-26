@@ -31,8 +31,7 @@ Frontend implementation is a vibe React project which has very basic implementat
 ### IMPORTANT: Database auto migrations is open in the API's startpoint (program.cs) for development purposes. Disabe in production.
 ### Download times may be longer depending on the required packages and the inital builds, check the download and build processes from the Aspire Dashboard consoles for the services.
 ### Aspire Dashboard can fail depending on the computer's network configuration or the operating system (Win 10 is deprecated so maybe some issues)
-### If Dasboard fails on startup, wait for all containers to show up in docker desktop, (should be 5 with the pgAdmin, db, api, frontend, playwright) you can access the website from the docker container url of the frontend.
-### Everything still works
+### If Dasboard fails on startup, wait for all containers to show up in docker desktop, (should be 5 with the pgAdmin, db, api, frontend, playwright) you can access the website from the docker container url of the frontend. Everything still works.
 
 You can run the projects without Visual Studio using the .NET CLI:
 
