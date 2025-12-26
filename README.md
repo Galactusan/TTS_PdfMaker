@@ -45,7 +45,7 @@ You can run the projects without Visual Studio using the .NET CLI:
     dotnet build
     ```
 
-3. Run a specific project:
+3. Run AppHost project:
     ```bash
     dotnet run --project TTS_PdfMaker.AppHost/TTS_PdfMaker.AppHost.csproj --launch-profile "https"
     ```
