@@ -3,6 +3,14 @@
 # Aspire Solution
 
 This repository contains a multi-project .NET solution developed using Visual Studio 2022 with the Aspire environment.
+Goal of the project is make a robust PDF Making website which generates PDF's from given user plain text input or HTML input.
+Generated PDF's have creation date and unique identifiers for recalling the same documents via search feature in the website.
+
+
+The project uses a docker contained services to make a fullstack web service using .NET Aspire for centralized access and diagnostic features for the future.
+PostgreSQL database is used to hold the mentioned documents.
+The project uses playwright library to make a containerized Chromium so we can access all the HTML rendering features for our PDF's. This makes the initial download longer but provides extensive editing features to our PDF's.
+Frontend implementation is a vibe React project which has very basic implementation of 2 pages and a homepage.
 
 ## Projects
 
@@ -19,6 +27,9 @@ This repository contains a multi-project .NET solution developed using Visual St
 - Node.js 22+
 
 ## Running the solution
+
+# IMPORTANT: Database auto migrations is open in the API's startpoint (program.cs) for development purposes. Disabe in production.
+# Download times may be longer depending on the required packages and the inital builds, check the download and build processes from the Aspire Dashboard consoles for the services.
 
 You can run the projects without Visual Studio using the .NET CLI:
 
