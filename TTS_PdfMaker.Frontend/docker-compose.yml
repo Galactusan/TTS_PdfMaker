@@ -1,0 +1,49 @@
+version: '3.8'
+
+# Note: This docker-compose.yml is for reference/testing.
+# .NET Aspire will handle orchestration, but you can use this for local development.
+
+services:
+  backend:
+    # Update this to match your backend service name/image
+    # In Aspire, this will be managed by the AppHost project
+    image: your-backend-image:latest
+    # Or use build: ./path-to-backend
+    ports:
+      - "5047:5047"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      # CORS origins - adjust based on your Aspire configuration
+      - CORS__AllowedOrigins=http://frontend:80,http://localhost:52913
+    networks:
+      - app-network
+    # Healthcheck for Aspire compatibility
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:5047/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # Set API URL - in Aspire this will be injected via environment variables
+        VITE_API_BASE_URL: http://backend:5047
+    ports:
+      - "52913:80"
+    environment:
+      # Runtime API URL override (if using runtime config injection)
+      - VITE_API_BASE_URL=http://backend:5047
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+

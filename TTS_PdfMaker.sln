@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTS_PdfMaker.AppHost", "TTS_PdfMaker.AppHost\TTS_PdfMaker.AppHost.csproj", "{232D1D48-2DDB-4D92-BD37-E8896EA3FF81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTS_PdfMaker.ServiceDefaults", "TTS_PdfMaker.ServiceDefaults\TTS_PdfMaker.ServiceDefaults.csproj", "{6AB6CD9A-8170-4E58-9385-4B19A2370FA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTS_PdfMaker.Core", "TTS_PdfMaker.Core\TTS_PdfMaker.Core.csproj", "{8F3A3C4D-B48B-4646-BAAE-8A1F34D552DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTS_PdfMaker.Api", "TTS_PdfMaker.Api\TTS_PdfMaker.Api.csproj", "{4E291399-7FB6-4292-8641-154F71FFCABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTS_PdfMaker.Tests", "TTS_PdfMaker.Tests\TTS_PdfMaker.Tests.csproj", "{0F3DEDF0-95AA-4169-9BFE-F4DB92F64974}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "TTS_PdfMaker.Frontend", "tts_pdfmaker.frontend\TTS_PdfMaker.Frontend.esproj", "{B30186E9-6280-9BEB-790B-73AFEAA70A08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{232D1D48-2DDB-4D92-BD37-E8896EA3FF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232D1D48-2DDB-4D92-BD37-E8896EA3FF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232D1D48-2DDB-4D92-BD37-E8896EA3FF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232D1D48-2DDB-4D92-BD37-E8896EA3FF81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AB6CD9A-8170-4E58-9385-4B19A2370FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB6CD9A-8170-4E58-9385-4B19A2370FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB6CD9A-8170-4E58-9385-4B19A2370FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB6CD9A-8170-4E58-9385-4B19A2370FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3A3C4D-B48B-4646-BAAE-8A1F34D552DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3A3C4D-B48B-4646-BAAE-8A1F34D552DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3A3C4D-B48B-4646-BAAE-8A1F34D552DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3A3C4D-B48B-4646-BAAE-8A1F34D552DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E291399-7FB6-4292-8641-154F71FFCABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E291399-7FB6-4292-8641-154F71FFCABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E291399-7FB6-4292-8641-154F71FFCABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E291399-7FB6-4292-8641-154F71FFCABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F3DEDF0-95AA-4169-9BFE-F4DB92F64974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3DEDF0-95AA-4169-9BFE-F4DB92F64974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3DEDF0-95AA-4169-9BFE-F4DB92F64974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3DEDF0-95AA-4169-9BFE-F4DB92F64974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30186E9-6280-9BEB-790B-73AFEAA70A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30186E9-6280-9BEB-790B-73AFEAA70A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30186E9-6280-9BEB-790B-73AFEAA70A08}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B30186E9-6280-9BEB-790B-73AFEAA70A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30186E9-6280-9BEB-790B-73AFEAA70A08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30186E9-6280-9BEB-790B-73AFEAA70A08}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
