@@ -28,8 +28,8 @@ Frontend implementation is a vibe React project which has very basic implementat
 
 ## Running the solution
 
-# IMPORTANT: Database auto migrations is open in the API's startpoint (program.cs) for development purposes. Disabe in production.
-# Download times may be longer depending on the required packages and the inital builds, check the download and build processes from the Aspire Dashboard consoles for the services.
+### IMPORTANT: Database auto migrations is open in the API's startpoint (program.cs) for development purposes. Disabe in production.
+### Download times may be longer depending on the required packages and the inital builds, check the download and build processes from the Aspire Dashboard consoles for the services.
 
 You can run the projects without Visual Studio using the .NET CLI:
 
@@ -47,6 +47,8 @@ You can run the projects without Visual Studio using the .NET CLI:
     ```bash
     dotnet run --project TTS_PdfMaker.AppHost/TTS_PdfMaker.AppHost.csproj
     ```
+4. Login to the Aspire Dashboard to navigate to other endpoints.
+
 OR
 
 In Visual Studio:
@@ -56,6 +58,8 @@ In Visual Studio:
 3. Set the starting project to TTS_PdfMaker.AppHost
    
 5. Run with F5 or from GUI
+
+6. Login to the Aspire Dashboard to navigate to other endpoints.
 
 ## Notes
 
