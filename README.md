@@ -47,21 +47,12 @@ You can run the projects without Visual Studio using the .NET CLI:
 
 3. Run a specific project:
     ```bash
-    dotnet run --project TTS_PdfMaker.AppHost/TTS_PdfMaker.AppHost.csproj
+    dotnet run --project TTS_PdfMaker.AppHost/TTS_PdfMaker.AppHost.csproj --launch-profile "https"
     ```
-4. Login to the Aspire Dashboard to navigate to other endpoints.
-
-OR
-
-In Visual Studio:
-
-1. Open the TTS_PdfMaker.sln
-   
-3. Set the starting project to TTS_PdfMaker.AppHost
-   
-5. Run with F5 or from GUI
-
-6. Login to the Aspire Dashboard to navigate to other endpoints.
+    Or without https (no SSL)
+    ```bash
+    dotnet run --project TTS_PdfMaker.AppHost/TTS_PdfMaker.AppHost.csproj --launch-profile "http"
+    ```
 
 ## Notes
 
